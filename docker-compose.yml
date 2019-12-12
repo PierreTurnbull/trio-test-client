@@ -2,9 +2,7 @@ version: '3.5'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: nounoursnoir/trio-test-client:latest
     container_name: trio-test-client-app
     ports:
       - 8000:80
